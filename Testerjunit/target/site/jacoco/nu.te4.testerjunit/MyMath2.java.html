@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="sv"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MyMath2.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Testerjunit</a> &gt; <a href="index.source.html" class="el_package">nu.te4.testerjunit</a> &gt; <span class="el_source">MyMath2.java</span></div><h1>MyMath2.java</h1><pre class="source lang-java linenums">/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package nu.te4.testerjunit;
+
+/**
+ *
+ * @author Elev
+ */
+<span class="fc" id="L12">public class MyMath2 {</span>
+    
+        
+    public double convertToFarenheit(double c){
+<span class="pc bpc" id="L16" title="1 of 2 branches missed.">        if(c&lt;-273.15){</span>
+<span class="nc" id="L17">            throw new IllegalArgumentException(&quot;Temperature cant be lower than 0 Kelvin.&quot;);</span>
+        }            
+<span class="fc" id="L19">         double f = 1.8*c + 32;</span>
+<span class="fc" id="L20">        return f; </span>
+    }
+    
+    public int compareTo(int a, int b){
+<span class="fc bfc" id="L24" title="All 2 branches covered.">        if(a &gt; b){</span>
+<span class="fc" id="L25">            return a - b;</span>
+        }
+<span class="fc bfc" id="L27" title="All 2 branches covered.">        else if(a == b){</span>
+<span class="fc" id="L28">            return a;</span>
+        }
+<span class="pc bpc" id="L30" title="1 of 2 branches missed.">        else if(a &lt; b){</span>
+<span class="fc" id="L31">            return a - b;</span>
+        }
+<span class="nc" id="L33">        return 0; </span>
+    }    
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
