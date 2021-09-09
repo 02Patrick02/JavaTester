@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="7" failures="0" name="nu.te4.testerjunit.MyMathTest" time="0.023" errors="0" skipped="0">
+<testsuite tests="10" failures="0" name="nu.te4.testerjunit.MyMathTest" time="0.028" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="16.0.2+7-67"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-16.0.2\bin"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Elev\Documents\NetBeansProjects\Testerjunit"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\kulev\Desktop\JavaTester-main\Testerjunit"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,11 +15,11 @@
     <property name="user.country" value="SE"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\Elev\Documents\NetBeansProjects\Testerjunit"/>
-    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="user.dir" value="C:\Users\kulev\Desktop\JavaTester-main\Testerjunit"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="java.runtime.version" value="16.0.2+7-67"/>
     <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="C:\Users\Elev\AppData\Local\Temp\"/>
+    <property name="java.io.tmpdir" value="C:\Users\kulev\AppData\Local\Temp\"/>
     <property name="line.separator" value="
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
@@ -28,7 +28,7 @@
     <property name="maven.ext.class.path" value="C:\Program Files\NetBeans-12.4\netbeans\java\maven-nblib\netbeans-eventspy.jar"/>
     <property name="classworlds.conf" value="C:\Program Files\NetBeans-12.4\netbeans\java\maven\bin\..\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-16.0.2\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\Elev\AppData\Local\Microsoft\WindowsApps;C:\Users\Elev\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Elev\AppData\Local\GitHubDesktop\bin;C:\Users\Elev\AppData\Roaming\npm;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-16.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Users\kulev\AppData\Local\Microsoft\WindowsApps;;C:\Users\kulev\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\kulev\.dotnet\tools;."/>
     <property name="maven.conf" value="C:\Program Files\NetBeans-12.4\netbeans\java\maven\bin\../conf"/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="60.0"/>
@@ -36,11 +36,11 @@
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.0"/>
     <property name="library.jansi.path" value="C:\Program Files\NetBeans-12.4\netbeans\java\maven\bin\..\lib\jansi-native"/>
-    <property name="user.home" value="C:\Users\Elev"/>
+    <property name="user.home" value="C:\Users\kulev"/>
     <property name="user.timezone" value="Europe/Stockholm"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.specification.version" value="16"/>
-    <property name="user.name" value="Elev"/>
+    <property name="user.name" value="kulev"/>
     <property name="java.class.path" value="C:\Program Files\NetBeans-12.4\netbeans\java\maven\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="16"/>
     <property name="sun.arch.data.model" value="64"/>
@@ -59,11 +59,14 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="nu.te4.testerjunit.MyMathTest" name="testAdd" time="0.006"/>
-  <testcase classname="nu.te4.testerjunit.MyMathTest" name="testDifference2_int_int" time="0"/>
+  <testcase classname="nu.te4.testerjunit.MyMathTest" name="testAdd" time="0.007"/>
+  <testcase classname="nu.te4.testerjunit.MyMathTest" name="testIsEqualFalse" time="0"/>
+  <testcase classname="nu.te4.testerjunit.MyMathTest" name="testDifference2_int_int" time="0.001"/>
+  <testcase classname="nu.te4.testerjunit.MyMathTest" name="testDifference_int_int2" time="0"/>
   <testcase classname="nu.te4.testerjunit.MyMathTest" name="testDifference_String_String" time="0"/>
+  <testcase classname="nu.te4.testerjunit.MyMathTest" name="return0" time="0.001"/>
   <testcase classname="nu.te4.testerjunit.MyMathTest" name="testDifference2_String_String" time="0"/>
   <testcase classname="nu.te4.testerjunit.MyMathTest" name="testIsEqual" time="0"/>
-  <testcase classname="nu.te4.testerjunit.MyMathTest" name="testAdd_Exception" time="0.017"/>
+  <testcase classname="nu.te4.testerjunit.MyMathTest" name="testAdd_Exception" time="0.019"/>
   <testcase classname="nu.te4.testerjunit.MyMathTest" name="testDifference_int_int" time="0"/>
 </testsuite>

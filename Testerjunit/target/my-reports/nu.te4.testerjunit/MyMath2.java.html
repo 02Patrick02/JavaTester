@@ -13,8 +13,8 @@ package nu.te4.testerjunit;
     
         
     public double convertToFarenheit(double c){
-<span class="pc bpc" id="L16" title="1 of 2 branches missed.">        if(c&lt;-273.15){</span>
-<span class="nc" id="L17">            throw new IllegalArgumentException(&quot;Temperature cant be lower than 0 Kelvin.&quot;);</span>
+<span class="fc bfc" id="L16" title="All 2 branches covered.">        if(c&lt;-273.15){</span>
+<span class="fc" id="L17">            throw new IllegalArgumentException(&quot;Temperature cant be lower than 0 Kelvin.&quot;);</span>
         }            
 <span class="fc" id="L19">         double f = 1.8*c + 32;</span>
 <span class="fc" id="L20">        return f; </span>
@@ -27,10 +27,9 @@ package nu.te4.testerjunit;
 <span class="fc bfc" id="L27" title="All 2 branches covered.">        else if(a == b){</span>
 <span class="fc" id="L28">            return a;</span>
         }
-<span class="pc bpc" id="L30" title="1 of 2 branches missed.">        else if(a &lt; b){</span>
+        else{
 <span class="fc" id="L31">            return a - b;</span>
         }
-<span class="nc" id="L33">        return 0; </span>
     }    
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

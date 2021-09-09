@@ -73,14 +73,24 @@ public class MyMathTest {
     @Test
     public void testIsEqual() {
         System.out.println("isEqual");
-        int a = 0;
-        int b = 0;
+        int a = 2;
+        int b = 2;
         MyMath instance = new MyMath();
         boolean expResult = true;
         boolean result = instance.isEqual(a, b);
         assertEquals(expResult, result);
     }
 
+    @Test
+        public void testIsEqualFalse() {
+        System.out.println("isEqual");
+        int a = 3;
+        int b = 2;
+        MyMath instance = new MyMath();
+        boolean expResult = false;
+        boolean result = instance.isEqual(a, b);
+        assertEquals(expResult, result);
+    }
     /**
      * Test of difference method, of class MyMath.
      */
@@ -110,8 +120,8 @@ public class MyMathTest {
     @Test
     public void testDifference_String_String() {
         System.out.println("difference lowString highString");
-        String a = "2";
-        String b = "4";
+        String a = "4";
+        String b = "2";
         MyMath instance = new MyMath();
         int expResult = 2;
         int result = instance.difference(a, b);
@@ -125,8 +135,29 @@ public class MyMathTest {
         String b = "4";
         MyMath instance = new MyMath();
         int expResult = 2;
-        int result = instance.difference(a, b);
+        int result = instance.difference(b, a);
         assertEquals(expResult, result);
     }    
     
+    @Test
+    public void return0() {
+        System.out.println("return 0");
+        String a = "4";
+        String b = "4";
+        MyMath instance = new MyMath();
+        int expResult = 0;
+        int result = instance.difference(b, a);
+        assertEquals(expResult, result);
+    } 
+    
+   @Test
+    public void testDifference_int_int2() {
+        System.out.println("return 0");
+        int a = 2;
+        int b = 2;
+        MyMath instance = new MyMath();
+        int expResult = 0;
+        int result = instance.difference(a, b);
+        assertEquals(expResult, result);
+    } 
 }

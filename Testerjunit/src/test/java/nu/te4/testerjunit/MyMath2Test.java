@@ -49,6 +49,7 @@ public class MyMath2Test {
         double result = instance.convertToFarenheit(c);
         assertEquals(expResult, result, 0.0);
     }
+    
     @Test
     public void testConvertToFarenheit2() {
         System.out.println("convertToFarenheit 10c");
@@ -62,6 +63,7 @@ public class MyMath2Test {
     /**
      * Test of compareTo method, of class MyMath2.
      */
+    
     @Test
     public void testCompareToHighToLow() {
         System.out.println("compareTo high, low");
@@ -72,6 +74,7 @@ public class MyMath2Test {
         int result = instance.compareTo(a, b);
         assertEquals(expResult, result);
     }
+    
     @Test
     public void testCompareToEqual() {
         System.out.println("compareTo equal");
@@ -82,6 +85,7 @@ public class MyMath2Test {
         int result = instance.compareTo(a, b);
         assertEquals(expResult, result);
     }
+    
     @Test
     public void testCompareToLowToHigh() {
         System.out.println("compareTo Low, high");
@@ -93,4 +97,12 @@ public class MyMath2Test {
         assertEquals(expResult, result);
     }
     
+    @Test
+    public void IllegalThrow(){
+        System.out.println("Illegal throw");
+        MyMath2 instance = new MyMath2();
+        assertThrows(IllegalArgumentException.class, () ->{
+            instance.convertToFarenheit(-285);
+        });
+    }
 }

@@ -36,12 +36,12 @@ package nu.te4.testerjunit;
 <span class="fc bfc" id="L36" title="All 2 branches covered.">        if(number &lt; 0) {</span>
 <span class="fc" id="L37">            throw new IllegalArgumentException(&quot;Argument cant be lower than zero&quot;);</span>
         }
-<span class="pc bnc" id="L39" title="All 2 branches missed.">        for (int i = 0;i &lt;= Math.sqrt(number);i++){</span>
-<span class="nc bnc" id="L40" title="All 2 branches missed.">            if(number%i==0){</span>
-<span class="nc" id="L41">                return false;</span>
+<span class="pc bfc" id="L39" title="All 2 branches covered.">        for (int i = 2;i &lt;= Math.sqrt(number);i++){</span>
+<span class="pc bpc" id="L40" title="1 of 2 branches missed.">            if(number%i==0){</span>
+<span class="fc" id="L41">                return false;</span>
             }
-        }
-<span class="nc" id="L44">        return true;</span>
+    }
+<span class="fc" id="L44">        return true;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

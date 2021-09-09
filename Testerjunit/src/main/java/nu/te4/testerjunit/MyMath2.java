@@ -27,9 +27,8 @@ public class MyMath2 {
         else if(a == b){
             return a;
         }
-        else if(a < b){
+        else{
             return a - b;
         }
-        return 0; 
     }    
 }

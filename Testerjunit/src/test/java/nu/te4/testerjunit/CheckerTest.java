@@ -42,7 +42,9 @@ public class CheckerTest {
         System.out.println("isPalindrome");
         String input = "ABBA";
         Checker checker = new Checker();
-        assertEquals(checker.isPalindrome(input), true);
+        boolean expResult = true;
+        boolean result = checker.isPalindrome(input);
+        assertEquals(expResult, result);
     }
     
     @Test
@@ -69,5 +71,23 @@ public class CheckerTest {
             checker.isPrimeNumber(-1);
         });
     }
+    @Test
+    public void isMod(){
+        System.out.println("is modulus");
+        int i = 44;
+        Checker checker = new Checker();
+        boolean expResult = false;
+        boolean result = checker.isPrimeNumber(i);
+        assertEquals(expResult, result);
+    }
     
+    @Test
+    public void isModTrue(){
+        System.out.println("is mod");
+        int i = 2;
+        Checker checker = new Checker();
+        boolean expResult = true;
+        boolean result = checker.isPrimeNumber(i);
+        assertEquals(expResult, result);
+    }
 }
